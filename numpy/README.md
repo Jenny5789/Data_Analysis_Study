@@ -235,15 +235,40 @@ np.hstack([x, y])    # 수평 결합 → shape (10,)
 
 #### 히스토그램 / Histograms
 ```python
-# matplotlib: 직접 플롯
+# matplotlib: 막대 그래프로 직접 표시
 plt.hist(v, bins=50, density=True)
+# bins=50: 데이터를 50개 구간으로 나눔
+# density=True: 정규화 (면적=1)
 
-# NumPy: 데이터만 계산 (플롯 없음)
+# NumPy: 데이터 계산만 (플롯 없음)
 n, bins = np.histogram(v, bins=50, density=True)
-plt.plot(.5 * (bins[1:] + bins[:-1]), n)
-```
-> 💡 `np.histogram`은 데이터만 반환, `plt.hist`는 자동 플롯까지 수행
+# n: 50개 구간의 높이
+# bins: 51개의 구간 경계값
 
+# 선 그래프로 표시
+plt.plot(.5 * (bins[1:] + bins[:-1]), n)
+# bins[1:] + bins[:-1]: 이웃한 경계값들의 합
+# .5 × (합): 각 구간의 중점 계산
+# → x축: 중점(50개), y축: 높이(50개)
+```
+
+#### ix_() 함수 / The ix_() Function
+```python
+a = np.array([2, 3, 4, 5])       # 4개
+b = np.array([8, 5, 4])          # 3개  
+c = np.array([5, 4, 6, 8, 3])    # 5개
+
+ax, bx, cx = np.ix_(a, b, c)
+# np.ix_: 각 배열을 다차원 인덱싱용으로 확장
+# 입력 3개 → 3D 배열 생성
+# ax.shape → (4,1,1), bx.shape → (1,3,1), cx.shape → (1,1,5)
+
+result = ax + bx * cx             # Broadcasting으로 (4,3,5)
+# a[i] + b[j] * c[k]의 모든 조합(4×3×5=60개) 한 번에 계산
+
+result[3, 2, 4]                   # a[3] + b[2] * c[4] = 5 + 4*3 = 17
+```
+> 💡 `np.ix_()`는 여러 배열의 모든 조합을 효율적으로 계산
 ---
 
 ## 🛠️ 실행 환경 / Environment
