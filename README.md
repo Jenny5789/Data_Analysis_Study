@@ -21,7 +21,7 @@
 4. [Advanced Indexing](./numpy/Advanced%20indexing%20and%20index%20tricks.ipynb) — 고급 인덱싱, `ix_()`
 5. [Tricks and Tips](./numpy/Tricks_and_tips.ipynb) — 자동 reshape, 벡터 쌓기, 히스토그램
 
-[NumPy 정리 노트 상세보기 →](./numpy/)
+[상세보기 →](./numpy/)
 
 ---
 
@@ -33,7 +33,7 @@
 
 <img src="https://github.com/user-attachments/assets/a00ab1ed-421f-4ac4-b495-379833614bcf" width="800" alt="시도별 PM2.5 비교">
 
-[대기오염 분석 상세보기 →](./pandas/korea_air_quality_analysis/)
+[상세보기 →](./pandas/korea_air_quality_analysis/)
 
 ---
 
