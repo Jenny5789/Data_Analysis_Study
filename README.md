@@ -15,11 +15,11 @@
 
 ## 📁 [NumPy](./numpy/) — 공식 문서 학습
 
-1. [The Basics — 배열 생성, 연산, 인덱싱](./numpy/The%20basics.ipynb)
-2. [Shape Manipulation — 형태 변환, 배열 합치기](./numpy/Shape%20Manipulation.ipynb)
-3. [Copies and Views — 복사와 뷰](./numpy/Copies%20and%20views.ipynb)
-4. [Advanced Indexing — 고급 인덱싱, `ix_()`](./numpy/Advanced%20indexing%20and%20index%20tricks.ipynb)
-5. [Tricks and Tips — 자동 reshape, 벡터 쌓기, 히스토그램](./numpy/Tricks_and_tips.ipynb)
+1. [The Basics](./numpy/The%20basics.ipynb) — 배열 생성, 연산, 인덱싱
+2. [Shape Manipulation](./numpy/Shape%20Manipulation.ipynb) — 형태 변환, 배열 합치기
+3. [Copies and Views](./numpy/Copies%20and%20views.ipynb) — 복사와 뷰
+4. [Advanced Indexing](./numpy/Advanced%20indexing%20and%20index%20tricks.ipynb) — 고급 인덱싱, `ix_()`
+5. [Tricks and Tips](./numpy/Tricks_and_tips.ipynb) — 자동 reshape, 벡터 쌓기, 히스토그램
 
 [NumPy 정리 노트 상세보기 →](./numpy/)
 
